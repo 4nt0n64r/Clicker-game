@@ -30,7 +30,7 @@ public class GameActivity extends AppCompatActivity {
 
             public void onTick(long l) {
                 mTimer.setText("" + l / 1000);
-            }       //высунуть таймер из нажатия
+            }
 
             public void onFinish() {
                 mTimer.setText("0");
