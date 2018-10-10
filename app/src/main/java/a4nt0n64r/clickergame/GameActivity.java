@@ -15,6 +15,7 @@ public class GameActivity extends AppCompatActivity {
     private TextView mPointsTW;
 
     private int mEarnedPoints = 0;
+    private int timerSeconds = 30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class GameActivity extends AppCompatActivity {
         mTimer = (TextView) findViewById(R.id.timer);
         mPointsTW = (TextView) findViewById(R.id.points);
 
-        new CountDownTimer(10000, 1000) {
+        new CountDownTimer(timerSeconds*1000, 1000) {
 
             public void onTick(long l) {
                 mTimer.setText("" + l / 1000);
@@ -36,6 +37,7 @@ public class GameActivity extends AppCompatActivity {
                 // сообщение "время вышло"
                 //стартуем итоговую активность
                 Intent intent = new Intent(GameActivity.this, EndActivity.class);
+                intent.putExtra("points_from_game", mEarnedPoints);
                 startActivity(intent);
             }
         }.start();

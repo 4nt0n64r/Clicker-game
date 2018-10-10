@@ -8,18 +8,21 @@
     </string>
     <string name="instructions">
         After tapping <b>START</b>\n
-        the 60 seconds countdown will start.\n
+        the 30 seconds countdown will start.\n
         More taps on <b>TAP</b> - better results.\n
         Good luck have fun.</string>
-    <string name="zero_points_earned">Zero, hmm, did you really fall asleep instead of playing?</string>
-    <string name="less_than_60_points_earned">Your speed of tapping is at granny level.</string>
-    <string name="more_than_60_less_than_100_points_earned">Not so cool. You can better!</string>
+    <string name="text_zero_points_earned">Zero, hmm, did you really fall asleep instead of playing?</string>
+    <string name="text_one_points_earned">One means <b>FIRST</b>.</string>
+    <string name="less_than_30_points_earned">Your speed of tapping is at granny level. Poor.</string>
+    <string name="more_than_30_less_than_100_points_earned">Not so cool. You can better!</string>
     <string name="more_than_100_points_earned">First hundred! Cool!</string>
-    <string name="more_than_200_points_earned"></string>
-    <string name="more_than_300_points_earned"></string>
-    <string name="more_than_400_points_earned"></string>
+    <string name="more_than_200_points_earned">People are divided into 2 types: <b>-200</b> and <b>200+</b>. You know who daddy now.</string>
+    <string name="more_than_300_points_earned">Only units to reaches this level, my respect. Boast to somebody.</string>
+    <string name="more_than_400_points_earned">Your fingers like lightning! Very fast!</string>
     <string name="more_than_500_points_earned">Fastest finger alive. My congratulations!</string>
     <string name="more_than_1k_points_earned">
         Really? I hope that no one will reach 1K, because its to difficult to invent new strings XD.
     </string>
+    <string name="points_earned">%1$d points earned.</string>
+    <string name="zero_or_one_earned">%1$d point earned.</string>
 </resources>
