@@ -17,14 +17,13 @@ public class EndActivity extends AppCompatActivity {
     private int mPointsEarned = 0;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
 
         Intent intent = getIntent();
-        mPointsEarned = intent.getIntExtra("points_from_game",0);//get points from game act
+        mPointsEarned = intent.getIntExtra("points_from_game",0);//get points from GameActivity
 
         mResultText = (TextView) findViewById(R.id.text_results);
         mResultsNumber = (TextView) findViewById(R.id.points_results);
@@ -32,7 +31,7 @@ public class EndActivity extends AppCompatActivity {
         //congrats player for points
         if (mPointsEarned == 0){
             mResultsNumber.setText(getString(R.string.zero_or_one_earned,mPointsEarned)); //0
-            mResultText.setText(R.string.text_zero_points_earned);//(R.string.text_zero_points_earned);
+            mResultText.setText(R.string.text_zero_points_earned);
         }else if (mPointsEarned == 1){
             mResultsNumber.setText(getString(R.string.zero_or_one_earned,mPointsEarned));//1
             mResultText.setText(R.string.text_one_points_earned);
@@ -68,6 +67,7 @@ public class EndActivity extends AppCompatActivity {
         mRestart.setOnClickListener(new View.OnClickListener() {        //begin new game
             @Override
             public void onClick(View v){
+                //start MainActivity
                 Intent intent = new Intent(EndActivity.this, MainActivity.class);
                 startActivity(intent);
             }

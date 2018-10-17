@@ -34,8 +34,7 @@ public class GameActivity extends AppCompatActivity {
 
             public void onFinish() {
                 mTimer.setText("0");
-                // сообщение "время вышло"
-                //стартуем итоговую активность
+                //start EndActivity with our result
                 Intent intent = new Intent(GameActivity.this, EndActivity.class);
                 intent.putExtra("points_from_game", mEarnedPoints);
                 startActivity(intent);
@@ -46,6 +45,7 @@ public class GameActivity extends AppCompatActivity {
         mTapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //count points
                 mEarnedPoints++;
                 mPointsTW.setText(""+mEarnedPoints);
 

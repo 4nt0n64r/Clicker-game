@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">Clicker game - tap to win</string>
+    <string name="app_name">Simple clicker</string>
     <string name="start_button">START</string>
+    <string name="restart_button">RESTART</string>
+    <string name="tap_button">TAP!</string>
     <string name="counter">0</string>
+    <string name="points">Pts.</string>
+    <string name="seconds">Sec.</string>
     <string name="greetings">
         <b>Hello and welcome \n
             to CLICKER GAME!</b>
@@ -25,7 +29,7 @@
     <string name="more_than_200_points_earned">
         People are divided into 2 types:\n
         <b>-200</b> and <b>200+</b>.\n
-        You know who daddy now.</string>
+        You know who is daddy now.</string>
     <string name="more_than_300_points_earned">
         Only units reaches this level, my respect.\n
         Boast to somebody.</string>
